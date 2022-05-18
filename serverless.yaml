@@ -28,3 +28,4 @@ package:
     - '!package-lock.json'
     - '!yarn.lock'
     - '!tsconfig.json'
+    - '!README.md'
