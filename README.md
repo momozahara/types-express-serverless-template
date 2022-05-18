@@ -21,7 +21,7 @@ to build
 npm run build
 ```
 
-to deploy dev stage
+to deploy development stage
 ```
 npm run deploy-dev
 ```
