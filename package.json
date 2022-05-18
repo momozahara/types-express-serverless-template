@@ -2,8 +2,8 @@
  "scripts": {
   "start": "npm run build && serverless offline start",
   "build": "npx tsc",
-	"deploy-dev": "npm run build && serverless deploy --stage dev",
-	"deploy-prod": "npm run build && serverless deploy --stage prod"
+  "deploy-dev": "npm run build && serverless deploy --stage dev",
+  "deploy-prod": "npm run build && serverless deploy --stage prod"
  },
  "devDependencies": {
   "@types/cors": "^2.8.12",
