@@ -24,8 +24,9 @@ plugins:
 
 package:
   patterns:
-    - '!src/**'
     - '!package-lock.json'
-    - '!yarn.lock'
     - '!tsconfig.json'
+    - '!nodemon.json'
+    - '!yarn.lock'
     - '!README.md'
+    - '!src/**'
