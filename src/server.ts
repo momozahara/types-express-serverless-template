@@ -14,5 +14,5 @@ app.use(mainRouter);
 const server: ServerlessHttp.Handler = ServerlessHttp(app);
 
 export {
-	server as handler
+  server as handler
 }
