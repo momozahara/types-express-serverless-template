@@ -1,4 +1,4 @@
-import express, { Express, Request, Response } from 'express';
+import express, { Express } from 'express';
 import ServerlessHttp from 'serverless-http';
 import cors from 'cors';
 
