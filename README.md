@@ -2,6 +2,11 @@
 
 in this template is setup to deploy to [Amazon Web Services](https://aws.amazon.com/) on region [ap-southeast-1](https://en.wikipedia.org/wiki/Singapore) with disable [Versioning Deployed Functions](https://www.serverless.com/framework/docs/providers/aws/guide/functions#versioning-deployed-functions)
 
+[Prisma](https://github.com/prisma/prisma) installation
+```
+prisma db push
+```
+
 installation
 ```
 yarn install
