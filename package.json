@@ -1,6 +1,6 @@
 {
  "scripts": {
-  "start": "concurrently \"npm run build\" \"nodemon\"  \"serverless offline start --noPrependStageInUrl\"",
+  "start": "npm run build && concurrently \"nodemon\"  \"serverless offline start --noPrependStageInUrl\"",
   "build": "npx tsc",
   "deploy-dev": "npm run build && serverless deploy --stage dev",
   "deploy-prod": "npm run build && serverless deploy --stage prod"
