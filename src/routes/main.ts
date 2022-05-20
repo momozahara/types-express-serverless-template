@@ -1,5 +1,4 @@
 import express, { Router, Request, Response } from 'express';
-import { seed } from '../prisma/seed';
 import { prisma } from '../prisma/client';
 
 const router: Router = express.Router();
@@ -23,14 +22,6 @@ router.get('/setting/get/:name', async (req: Request, res: Response) => {
     }
   });
   res.status(200).json(setting);
-});
-
-router.get('/setting/seed', async (req: Request, res: Response) => {
-  const settings = await seed();
-  res.status(200).json({
-    message: 'Seed Setting',
-    settings: settings
-  });
 });
 
 export {

@@ -4,6 +4,7 @@ in this template is setup to deploy to [Amazon Web Services](https://aws.amazon.
 
 [Prisma](https://github.com/prisma/prisma) installation
 ```
+prisma generate
 prisma db push
 ```
 
@@ -34,4 +35,9 @@ npm run deploy-dev
 to deploy production stage
 ```
 npm run deploy-prod
+```
+
+to seed example data
+```
+npm run seed
 ```

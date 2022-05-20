@@ -1,5 +1,6 @@
-import { Prisma, Setting } from '@prisma/client';
-import { prisma } from '../prisma/client';
+import { Prisma, PrismaClient, Setting } from '@prisma/client';
+
+const prisma = new PrismaClient();
 
 const settingData: Prisma.SettingCreateInput[] = [
   {
@@ -16,7 +17,7 @@ const settingData: Prisma.SettingCreateInput[] = [
   },
 ]
 
-export const seed = async () => {
+const seed = async () => {
   const settings = await prisma.setting.findMany();
   let result: Setting[] = [];
   for (const s of settingData) {
@@ -31,3 +32,10 @@ export const seed = async () => {
   }
   return result;
 }
+
+const start = async () => {
+  const settings = await seed();
+  console.log(settings);
+}
+
+start();
